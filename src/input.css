@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-img{
+@apply bg-[url('img/header-bg.png')];
+}
+
+.hamburger-active > span:nth-child(1){
+    @apply rotate-45 ;
+}
+.hamburger-active > span:nth-child(2){
+    @apply scale-0;
+}
+.hamburger-active > span:nth-child(3){
+    @apply -rotate-45;
+}
+
+body{
+    @apply font-poppins;
+}

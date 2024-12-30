@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    
+        <header class="absolute flex justify-between w-full py-4 px-2 ">
+            <div class="container mx-auto flex justify-between  relative">
+            <div class="text-white text-2xl">
+                    <a href="">Elsa</a>
+            </div>
+            <div>
+                <button id="hamburger" type="button" class="lg:hidden right-0 block absolute ">
+                    <span class="block w-[30px] h-[2px] my-2 bg-white origin-top-left duration-300"></span>
+                    <span class="block w-[30px] h-[2px] my-2 bg-white duration-300"></span>
+                    <span class="block w-[30px] h-[2px] my-2 bg-white origin-top-left duration-300"></span>
+                </button>
+                <nav id="nav-menu" class="hidden lg:block mt-8 lg:mt-0">
+                    <ul class="lg:flex lg:bg-transparent bg-white lg:text-white px-2 py-2 align-center  ">
+                        <li  class="mx-3 my-1"><a href="#home" class="hover:text-pink-500">Home</a></li>
+                        <li class="mx-3 my-1"><a href="#tours"  class="hover:text-pink-500">Tours</a></li>
+                        <li class="mx-3 my-1"><a href="#explore"  class="hover:text-pink-500">Explore</a></li>
+                        <li class="mx-3 my-1"><a href=""  class="hover:text-pink-500">About</a></li>
+                        <li class="mx-3 my-1 "><a href="" class="lg:bg-pink-500 lg:py-1 lg:px-4 lg:rounded-2xl lg:text-white lg:hover:shadow-lg lg:hover:bg-white lg:hover:text-pink-500 hover:text-pink-500">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero section -->
+     <section id="home" class="h-screen flex items-end justify-center" style="background-image: url('img/header-bg.png'); background-size: cover; background-position: bottom;">
+        <div class="flex flex-col items-center mb-[120px] text-white">
+            <h3 class="text-2xl mb-5">Explore The Colorful World</h3>
+            <div class="bg-pink-500 h-1 w-36 mb-10"></div>
+            <h2 class="text-5xl mb-5">A WONDERFUL GIFT</h2>
+                <a href="" class="bg-pink-500 py-1 px-4 rounded-2xl text-white hover:shadow-lg hover:bg-white hover:text-pink-500">Learn More</a>
+                
+        </div>
+     </section>
+
+     <script src="script.js"></script>
+
+     <!-- Events -->
+      <section id="events" class="py-20 ">
+        <div class="container lg:w-[1000px] mx-auto">
+            <h2 class="text-customblue text-3xl lg:text-5xl font-semibold text-center mb-3 lg:mb-4">Upcoming Events</h2>
+            <div class="bg-pink-500 h-1 w-[230px] mx-auto mb-12"></div>
+        
+        <div class="grid lg:grid-cols-2 grid-cols-1 gap-5 ">
+            <div class="flex flex-col justify-center items-center  px-4">
+                <img src= "img/img1.png" alt="" class="w-[500px] mb-3 hover:scale-110 transition duration-300 ease-in-out">
+                <h3 class=" text-customblue mb-3 font-medium">Everest Camp Trek</h3>
+                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id commodi animi corrupti quos illum corporis.</p>
+                <a href="" class="bg-pink-500 py-1 px-4 rounded-2xl text-white hover:shadow-lg hover:bg-white hover:text-pink-500">Learn More</a>
+            </div>
+            <div class="flex flex-col justify-center items-center  px-4">
+                <img src= "img/img2.png" alt="" class="w-[500px] mb-3 hover:scale-110 transition duration-300 ease-in-out">
+                <h3 class=" text-customblue mb-2 font-medium">Walking Holidays</h3>
+                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id commodi animi corrupti quos illum corporis.</p>
+                <a href="" class="bg-pink-500 py-1 px-4 rounded-2xl text-white hover:shadow-lg hover:bg-white hover:text-pink-500">Learn More</a>
+            </div>
+        </div>
+        </div>
+        </section>
+
+        <!-- Explore -->
+         <section id="explore" style="background-image: url(img/bg2.png); background-size: cover;background-position: center;" class="h-screen flex flex-col  ">
+            <div class="text-white  w-1/2 lg:flex flex-col lg:items-center mx-20 my-40">
+
+                <h2 class="uppercase mb-2 lg:mb-3 text-3xl lg:text-5xl font-semibold">Explore The World</h2>
+                <div class="w-32 h-1 bg-pink-500 rounded-full mb-6 lg:w-40 ml-0" ></div>
+                <p class="mb-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat voluptas perspiciatis maiores ipsum eius itaque ipsam optio aperiam commodi tempore. Fugit, sunt voluptatibus? Saepe, autem.</p>
+                <a href="" class="bg-pink-500 py-1 px-4 rounded-2xl text-white  hover:bg-white hover:text-pink-500">Learn More</a>
+            </div>
+         </section>
+
+         <!-- Tours  -->
+          <section id="tours" class="my-20">
+            <div class="container mx-auto lg:px-0 px-4 ">
+                <div class="flex lg:items-center lg:flex-row lg:justify-center flex-col gap-4 lg:gap-9
+                ">
+                    <div class=" w-full lg:w-2/5 mb-7 ">
+                        <h2 class="uppercase text-4xl mb-2 text-customblue">Upcoming Tours & Destination</h2>
+                        <div class="h-1 w-20 mb-5 bg-pink-500 rounded-full"></div>
+                        <P class="mb-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis quibusdam quidem, quisquam eum architecto neque omnis, temporibus officiis nulla laborum veniam in minus voluptatem. Perspiciatis aspernatur modi voluptate veniam expedita.</P>
+                        <a href="" class="bg-pink-500 py-1 px-4 rounded-2xl text-white hover:shadow-lg hover:bg-white hover:text-pink-500">Learn More</a>
+                    </div>
+                    <div class="grid lg:grid-cols-2 gap-7" >
+                        <img src="img/img3.png" alt="" class="w-[250px] mx-auto hover:scale-110 transition duration-300 ease-in-out">
+                        <img src="img/img4.png" alt="" class="w-[250px] mx-auto hover:scale-110 transition duration-300 ease-in-out">
+                        <img src="img/img5.png" alt="" class="w-[250px] mx-auto hover:scale-110 transition duration-300 ease-in-out">
+                        <img src="img/img6.png" alt="" class="w-[250px] mx-auto hover:scale-110 transition duration-300 ease-in-out">
+                    </div>
+                </div>
+            </div>
+          </section>
+
+          <!-- footer -->
+           <section id="footer" class="bg-slate-600 text-center text-white py-10">
+                <p class="mb-3">123 Fifth Aveue, New York. USA | Email: coba@email.com</p>
+                <p>Copyright &copy; 2024 Elsa</p>
+           </section>
+</body>
+</html>
